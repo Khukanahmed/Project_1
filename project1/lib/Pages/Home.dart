@@ -7,8 +7,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0xffE5E5E5),
-        body: SafeArea(
-          child: SingleChildScrollView(
+        body: SingleChildScrollView(
+          child: SafeArea(
             child: Padding(
               padding: const EdgeInsets.only(left: 20, top: 40),
               child: Column(
@@ -126,6 +126,9 @@ class Home extends StatelessWidget {
                       height: 800,
                       //color: Colors.amber,
                       child: GridView.builder(
+                        // shrinkWrap: true,
+                        // primary: true,
+                        physics: NeverScrollableScrollPhysics(),
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
