@@ -126,9 +126,9 @@ class Home extends StatelessWidget {
                       height: 800,
                       //color: Colors.amber,
                       child: GridView.builder(
-                        // shrinkWrap: true,
-                        // primary: true,
-                        physics: NeverScrollableScrollPhysics(),
+                          // shrinkWrap: true,
+                          // primary: true,
+                          physics: NeverScrollableScrollPhysics(),
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
